@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container nav-container">
+          <div class="nav-logo">
+            <a href="../index.html">
+              <img src="../images/logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="nav-bar">
+            <ul class="nav-links">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="nav-buttons">
+              <button onclick="document.location='../pages/login.html'">
+                Log in
+              </button>
+              <button>Open an account</button>
+              <button>EN</button>
+            </div>
+          </div>
+          <div class="hamburger" id="navbar-open">
+            <button>
+              <img src="../images/menu.svg" alt="Menu" />
+            </button>
+          </div>
+          <div id="navbar-responsive">
+            <ul class="res-nav-list">
+              <li class="res-nav-item">
+                <a href="#home" class="res-nav-link">Services</a>
+              </li>
+              <li class="res-nav-item">
+                <a href="#about" class="res-nav-link">About</a>
+              </li>
+              <li class="res-nav-item">
+                <a href="#service" class="res-nav-link">Contacts</a>
+              </li>
+              <li class="res-nav-item">
+                <button class="res-nav-btn">Login</button>
+              </li>
+              <li class="res-nav-item">
+                <button class="res-nav-btn">Open an account</button>
+              </li>
+              <li class="res-nav-item">
+                <button class="res-nav-btn">EN</button>
+              </li>
+            </ul>
+            <button id="navbar-close">
+              <img src="../images/close.svg" alt="Close" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <form>
+          <div class="form-container">
+            <div class="form-title">
+              <img src="../images/logo.svg" alt="Logo" />
+              <h1>Welcome to ByTrend!</h1>
+              <div class="account-title">
+                <p>Already have an account?</p>
+                <a href="#">Log In</a>
+              </div>
+            </div>
+            <div class="form-inputs">
+              <div class="firstname">
+                <label for="first-name">Email<span>*</span></label>
+                <input
+                  required
+                  type="email"
+                  id="first-name"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="password-form">
+                <label for="password">Password<span>*</span></label>
+                <div class="password-box">
+                  <input
+                    autocomplete="new-password"
+                    required
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="************"
+                  />
+                  <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+              </div>
+              <button
+                onclick="document.location='../pages/login.html'"
+                class="continue-btn"
+                type="submit"
+              >
+                <p>Sign Up</p>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>©2020 All Rights Reserved. Lorem Technologies, Inc.</p>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
